@@ -1,2 +1,2 @@
-# Landing-Page
-Landing Page for Rhinos
+# Rhinos Project
+Landing Page for Rhinos Project
