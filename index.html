@@ -10,16 +10,16 @@
 
 <!-- nav bar -->
 <section id="navbar">
-<header>
-   <a href="index.html"><img src="images/logo.png" alt="logo rhino"></a> 
-  <nav>
-    <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="#">About Project</a> </li>
-        <li><a href="#">Save Us</a> </li>
-    </ul>
-  </nav>
-</header>
+  <header>
+     <a href="index.html"><img src="images/logo.png" alt="logo rhino"></a> 
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="#">About Project</a> </li>
+          <li><a href="#">Save Us</a> </li>
+      </ul>
+    </nav>
+  </header>
 </section>
 
 
@@ -29,8 +29,39 @@
     <div class="items">
       <h1 class="item h1tag">This Rhinos are <br>Awesome</h1>
       <p class="item ptag"> A rhinoceros, commonly abbreviated to rhino, is a member of any of the five extant species of odd-toed ungulates in the family Rhinocerotidae;</p>
-      <button class="item">Sign Up</button>
+      
+      <button id="openPopup"  class="item">Sign Up</button>
+      
+      <div id="signupPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Sign Up</h2>
+            <form>
+              <!-- Your sign-up form fields go here -->
+              
+            <div class="input-container">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+
+
+
+            </form>
+        </div>
     </div>
+
+
+    </div>
+
     <div class="items">
       <img class="item imgtag" src="images/pexels-photo.jpg" alt="wallpaper">
     </div>
@@ -114,6 +145,7 @@
 
 </footer>
 
+<script src="script.js"></script>
     
 </body>
 </html>
