@@ -5,61 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhinos - Save Us!</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
 </head>
 <body>
 
 <!-- nav bar -->
-<section id="navbar">
+<section id="navbar" class="reveal-nav">
   <header>
+    
      <a href="index.html"><img src="images/logo.png" alt="logo rhino"></a> 
+     
     <nav>
+      <div id="sticky-nav">
       <ul>
-          <li><a href="index.html">Home</a> </li>
-          <li><a href="#">About Project</a> </li>
-          <li><a href="#">Save Us</a> </li>
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="#">About Project</a> </li>
+        <li><a href="#">Save Us</a> </li>
+        
       </ul>
+      </div>
     </nav>
+  
   </header>
 </section>
 
 
 <!-- section for Hero main text and image in the hero -->
-<section id="hero">
+<section id="hero" class="reveal-hero">
   <div class="container">
     <div class="items">
-      <h1 class="item h1tag">This Rhinos are <br>Awesome</h1>
+      <h1 class="item h1tag">This Rhinos are<br>Awesome</h1>
       <p class="item ptag"> A rhinoceros, commonly abbreviated to rhino, is a member of any of the five extant species of odd-toed ungulates in the family Rhinocerotidae;</p>
       
-      <button id="openPopup"  class="item">Sign Up</button>
-      
-      <div id="signupPopup" class="popup">
-        <div class="popup-content">
-            <span class="close" id="closePopup">&times;</span>
-            <h2>Sign Up</h2>
-            <form>
-              <!-- Your sign-up form fields go here -->
-              
-            <div class="input-container">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="input-container">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-container">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Sign Up</button>
+      <button class="item">Sign Up</button>
 
-
-
-            </form>
-        </div>
-    </div>
-
-
+      <!-- button "top" appears when user try to scroll -->
+      <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button> 
+  
     </div>
 
     <div class="items">
@@ -72,7 +55,7 @@
 
 <!-- section for "some random information" -->
 
-<section>
+<section class="reveal-random">
   <h2>Some Random Information</h2>
 
   <div class="container-random">
@@ -107,7 +90,7 @@
 
 
 <!-- quote section -->
-<section>
+<section class="reveal-quote">
   <div class="container-quote">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod accusamus temporibus nesciunt! Necessitatibus numquam earum saepe aperiam. 
     <span>-Rhino</span></p>
@@ -118,7 +101,7 @@
 </section>
 
 <!-- signup section label -->
-<section>
+<section class="reveal-signup">
 <div class="container-signup">
   <div class="card">
     <div class="flex-item">
@@ -137,7 +120,7 @@
 </section>
 
 <!-- simply footer -->
-<footer>
+<footer class="reveal-footer">
   <div class="container-footer">
      Copyright 	&#169; <a href="index.html">Krishna Yadav</a>  2023
   </div>
