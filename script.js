@@ -22,7 +22,7 @@
 
 
 
-
+// float to top button js code
 // Get the button:
 let mybutton = document.getElementById("topBtn");
 
@@ -45,10 +45,21 @@ function topFunction() {
   document.documentElement.scrollTop = 0; 
 } 
 
-// ScrollReveal().reveal('.reveal-nav');
+//3. when page loads all the elements of Dom loaded slowly-slowly
+
 ScrollReveal().reveal('.reveal-random', { delay: 1000 });
 ScrollReveal().reveal('.reveal-quote', { delay: 1000 });
 ScrollReveal().reveal('.reveal-signup', { delay: 800 });
 ScrollReveal().reveal('.reveal-footer');
 
 
+// scroll indicator
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}

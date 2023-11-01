@@ -258,3 +258,30 @@ span
   /* sticky navbar stying */
 
  
+
+  /* scroll indicator */
+
+ 
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    /* background-color: #f1f1f1; */
+  }
+  
+  
+  
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background:#1F2937 ;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #3882f6;
+    width: 0%;
+  }
+  
+ 
