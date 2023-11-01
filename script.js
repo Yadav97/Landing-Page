@@ -1,25 +1,6 @@
 // sticky navabr code
 
 
-    // singup js code
-// const openPopupButton = document.getElementById("openPopup");
-// const closePopupButton = document.getElementById("closePopup");
-// const popup = document.getElementById("signupPopup");
-
-// openPopupButton.addEventListener("click", () => {
-//     popup.style.display = "block";
-// });
-
-// closePopupButton.addEventListener("click", () => {
-//     popup.style.display = "none";
-// });
-
-// window.addEventListener("click", (event) => {
-//     if (event.target == popup) {
-//         popup.style.display = "none";
-//     }
-// });
-
 
 
 // float to top button js code
@@ -55,7 +36,9 @@ ScrollReveal().reveal('.reveal-footer');
 
 // scroll indicator
 // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {
+    myFunction()
+};
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
